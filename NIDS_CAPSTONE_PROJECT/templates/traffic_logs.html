@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Traffic Logs</h1>
+<a href="/clear_logs/traffic" class="btn btn-danger float-end mb-3">Clear Logs</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Source IP</th>
+            <th>Destination IP</th>
+            <th>Protocol</th>
+            <th>Size</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.id }}</td>
+            <td>{{ log.src_ip }}</td>
+            <td>{{ log.dest_ip }}</td>
+            <td>{{ log.protocol }}</td>
+            <td>{{ log.packet_size }}</td>
+            <td>{{ log.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Attack Logs</h1>
+<a href="/clear_logs/attack" class="btn btn-danger float-end mb-3">Clear Logs</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Source IP</th>
+            <th>Destination IP</th>
+            <th>Message</th>
+            <th>Severity</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr class="{{ 'table-danger' if log.severity == 'High' else 'table-warning' if log.severity == 'Medium' else 'table-success' }}">
+            <td>{{ log.id }}</td>
+            <td>{{ log.src_ip }}</td>
+            <td>{{ log.dest_ip }}</td>
+            <td>{{ log.alert_message }}</td>
+            <td>{{ log.severity }}</td>
+            <td>{{ log.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

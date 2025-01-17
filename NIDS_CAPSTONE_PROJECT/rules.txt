@@ -1,0 +1,4 @@
+# Rule format: keyword: value
+large_packet: 1500
+suspicious_protocol: ICMP
+frequent_ip: 10
