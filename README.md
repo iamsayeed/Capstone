@@ -63,6 +63,17 @@ nide_project/
 4. Review captured packets using `pcap_analyzer.py`.
 5. Use `firewall.py` to enforce dynamic blocking rules.
 
+## Contributors
+The following individuals have contributed significantly to this project:
+
+1. **Mohammed Sayeed Shirur** - Lead Developer
+2. **Vishal G Dhavali** - Database Architect
+3. **Aditya Gupta** - Frontend Engineer & Backend Specialist
+4. **Ramakrishna** - Threat Intelligence Analyst
+5. **Tejas SP** - Documentation Specialist
+6. **Entire Group** - Quality Assurance Engineer
+
+
 ## Contributing
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
@@ -78,4 +89,12 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - **Wireshark/Tshark**: For packet analysis tools.
 - **SQLite**: Lightweight database engine.
 - **Open Source Libraries**: Refer to `requirements.txt` for a list of dependencies.
+
+## Contribution
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit changes: `git commit -m 'Add feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
 
