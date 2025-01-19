@@ -70,7 +70,7 @@ The following individuals have contributed significantly to this project:
 2. **Vishal G Dhavali** - Database Architect
 3. **Aditya Gupta** - Frontend Engineer & Backend Specialist
 4. **Ramakrishna** - Threat Intelligence Analyst
-5. **Tejas SP** - Documentation Specialist
+5. **Tejas SP** - Information Specialist
 6. **Entire Group** - Quality Assurance Engineer
 
 
